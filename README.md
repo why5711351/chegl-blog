@@ -51,42 +51,29 @@ hugo --minify --buildFuture
 
 输出目录：`public/`
 
-## 🌐 部署选项
+## 🌐 部署到 Netlify（已配置 ✅）
 
-### 选项 1: GitHub Pages（免费推荐）
+Netlify 配置文件已创建完成！查看 [`NETLIFY_SETUP.md`](NETLIFY_SETUP.md) 获取详细步骤。
 
-1. 创建 GitHub 仓库
-2. 推送代码：
+### 快速步骤：
+
+1. **创建 GitHub 仓库并推送**
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
+cd /root/.openclaw/workspace/adsense-blog
+git remote add origin https://github.com/YOUR_USERNAME/chegl-blog.git
 git branch -M main
-git remote add origin https://github.com/yourusername/yourrepo.git
 git push -u origin main
 ```
 
-3. 在 GitHub 设置中启用 GitHub Pages
-4. 选择 `main` 分支和 `/public` 文件夹（或使用 gh-pages 分支）
+2. **在 Netlify 部署**
+   - 访问 [netlify.com](https://netlify.com)
+   - 添加新站点 → 导入 GitHub 仓库
+   - 自动部署完成！
 
-### 选项 2: Netlify（免费推荐）
-
-1. 在 [Netlify](https://netlify.com) 注册
-2. 连接 GitHub 仓库
-3. 构建设置：
-   - Build command: `hugo --minify --buildFuture`
-   - Publish directory: `public`
-4. 部署！
-
-### 选项 3: Vercel（免费）
-
-1. 在 [Vercel](https://vercel.com) 注册
-2. 导入 GitHub 仓库
-3. 自动检测 Hugo 并部署
-
-### 选项 4: 传统主机/VPS
-
-将 `public/` 目录内容上传到 web 服务器（如 nginx/Apache）的根目录。
+3. **绑定域名 chegl.com**
+   - 在 Netlify Domain settings 添加域名
+   - 配置 DNS（使用 Netlify DNS 或手动配置）
+   - 启用 HTTPS
 
 **Nginx 配置示例：**
 ```nginx
