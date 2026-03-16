@@ -1,48 +1,33 @@
 baseURL = 'https://chegl.com/'
 languageCode = 'en-us'
-title = 'TechTutorials Pro'
-theme = 'custom'
+title = 'FindLegalHelp - Find the Right Lawyer for Your Case'
+theme = 'lawyer'
 
 [params]
-  # SEO 优化描述（包含主要关键词）
-  description = 'Free programming tutorials for beginners. Learn Python, web development, Git, and coding step-by-step. Practical guides for aspiring developers.'
+  # SEO 优化描述
+  description = 'Find qualified lawyers near you. Free consultation, no win no fee options. Get matched with top-rated attorneys for personal injury, family law, criminal defense & more.'
   
-  # 核心关键词（分层策略）
+  # 核心关键词
   keywords = [
-    # 一级关键词
-    'programming tutorials for beginners',
-    'learn to code free',
-    'web development tutorials',
-    
-    # 二级关键词
-    'python tutorials',
-    'coding tutorials step by step',
-    'software development guides',
-    
-    # 长尾关键词
-    'how to learn programming from scratch',
-    'free coding courses online',
-    'beginner programming lessons'
+    'find a lawyer',
+    'lawyer near me',
+    'hire an attorney',
+    'personal injury lawyer',
+    'family law attorney',
+    'criminal defense lawyer',
+    'free consultation lawyer',
+    'legal representation'
   ]
   
-  author = 'TechTutorials Team'
+  author = 'FindLegalHelp Team'
   images = ['images/og-image.png']
   
-  env = 'production'
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  ShowAllPagesInArchive = true
-  ShowPageNums = true
-  ShowToc = true
-  TocOpen = true
+  # 联系信息
+  phone = '1-800-XXX-XXXX'
+  email = 'info@chegl.com'
   
-  # AdSense (add after approval)
-  # googleAdsense = 'ca-pub-XXXXXXXXXXXXXXXX'
+  # 主题参数
+  env = 'production'
 
 [markup]
   [markup.goldmark]
