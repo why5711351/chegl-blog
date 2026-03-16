@@ -1,0 +1,32 @@
+#!/bin/bash
+# ============================================
+# GitHub 推送脚本 - 手动执行
+# ============================================
+
+echo "🚀 GitHub 推送脚本"
+echo ""
+echo "请按以下步骤操作："
+echo ""
+echo "1️⃣ 在浏览器中打开："
+echo "   https://github.com/login/device"
+echo ""
+echo "2️⃣ 复制下方显示的授权代码"
+echo ""
+echo "3️⃣ 在终端执行："
+echo "   cd /root/.openclaw/workspace/adsense-blog"
+echo "   gh auth login"
+echo ""
+echo "4️⃣ 按照提示完成登录"
+echo ""
+echo "5️⃣ 登录后执行："
+echo "   git push -u origin main"
+echo ""
+echo "============================================"
+echo ""
+echo "或者使用 Personal Access Token："
+echo "1. 访问：https://github.com/settings/tokens"
+echo "2. 创建 token（勾选 repo 权限）"
+echo "3. 执行："
+echo "   git remote set-url origin https://why5711351:YOUR_TOKEN@github.com/why5711351/chegl-blog.git"
+echo "   git push -u origin main"
+echo ""

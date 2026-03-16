@@ -53,21 +53,19 @@ hugo --minify --buildFuture
 
 ## 🌐 部署到 Netlify（已配置 ✅）
 
-Netlify 配置文件已创建完成！查看 [`NETLIFY_SETUP.md`](NETLIFY_SETUP.md) 获取详细步骤。
+**GitHub 用户名**: why5711351  
+**仓库名称**: chegl-blog  
+**远程仓库**: https://github.com/why5711351/chegl-blog
 
 ### 快速步骤：
 
-1. **创建 GitHub 仓库并推送**
-```bash
-cd /root/.openclaw/workspace/adsense-blog
-git remote add origin https://github.com/YOUR_USERNAME/chegl-blog.git
-git branch -M main
-git push -u origin main
-```
+1. **推送代码到 GitHub**
+   - 查看 [`FINAL_STEP.md`](FINAL_STEP.md) 获取详细步骤
+   - 使用 `gh auth login` 或 Personal Access Token
 
 2. **在 Netlify 部署**
    - 访问 [netlify.com](https://netlify.com)
-   - 添加新站点 → 导入 GitHub 仓库
+   - 添加新站点 → 导入 GitHub 仓库 `chegl-blog`
    - 自动部署完成！
 
 3. **绑定域名 chegl.com**
