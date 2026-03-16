@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    {{ hugo.Generator }}
+    
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    
+    {{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+    
+    {{ with .Site.Params.keywords }}
+    <meta name="keywords" content="{{ delimit . "," }}">
+    {{ end }}
+    
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- 自定义 CSS -->
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+    {{ if .IsHome }}
+    <link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
+    {{ end }}
+    
+    <!-- RSS -->
+    {{ with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+    {{ end }}
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+    
+    <!-- Schema.org -->
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    {{ partial "head-custom.html" . }}
+</head>
+<body>
+    <!-- 导航栏 -->
+    {{ partial "navbar.html" . }}
+    
+    <!-- 主内容区 -->
+    <main class="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    <!-- 页脚 -->
+    {{ partial "footer.html" . }}
+    
+    <!-- 主题切换脚本 -->
+    <script>
+        // 检查本地存储或系统偏好
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        
+        // 主题切换按钮
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    const currentTheme = document.documentElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                });
+            }
+            
+            // 导航栏滚动效果
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+            
+            // 滚动动画
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
+                observer.observe(el);
+            });
+            
+            // 移动端菜单
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

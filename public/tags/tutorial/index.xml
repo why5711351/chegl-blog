@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tutorial on TechTutorials Pro</title><link>https://chegl.com/tags/tutorial/</link><description>Recent content in Tutorial on TechTutorials Pro</description><image><title>TechTutorials Pro</title><url>https://chegl.com/images/og-image.png</url><link>https://chegl.com/images/og-image.png</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://chegl.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Python for Beginners: Your First Steps in Programming (2026)</title><link>https://chegl.com/posts/python-for-beginners-your-first-steps-in-programming-2026/</link><pubDate>Mon, 16 Mar 2026 11:00:00 +0800</pubDate><guid>https://chegl.com/posts/python-for-beginners-your-first-steps-in-programming-2026/</guid><description>Complete Python tutorial for absolute beginners. Learn variables, loops, functions, and build your first program.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on TechTutorials Pro</title><link>https://chegl.com/tags/tutorial/</link><description>Recent content in Tutorial on TechTutorials Pro</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://chegl.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Python for Beginners: Your First Steps in Programming (2026)</title><link>https://chegl.com/posts/python-for-beginners-your-first-steps-in-programming-2026/</link><pubDate>Mon, 16 Mar 2026 11:00:00 +0800</pubDate><guid>https://chegl.com/posts/python-for-beginners-your-first-steps-in-programming-2026/</guid><description>&lt;h1 id="python-for-beginners-your-first-steps-in-programming-2026">Python for Beginners: Your First Steps in Programming (2026)&lt;/h1>
+&lt;p>Python is one of the best programming languages for beginners in 2026. It&amp;rsquo;s readable, versatile, and has a huge community. This guide will take you from zero to writing your first Python programs.&lt;/p>
+&lt;h2 id="why-learn-python">Why Learn Python?&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Easy to read&lt;/strong> - Python code looks almost like English&lt;/li>
+&lt;li>&lt;strong>Versatile&lt;/strong> - Used in web development, data science, AI, automation, and more&lt;/li>
+&lt;li>&lt;strong>Great community&lt;/strong> - Tons of tutorials, libraries, and support&lt;/li>
+&lt;li>&lt;strong>High demand&lt;/strong> - One of the most sought-after skills in tech&lt;/li>
+&lt;li>&lt;strong>Free and open-source&lt;/strong> - No cost to learn or use&lt;/li>
+&lt;/ul>
+&lt;h2 id="installing-python">Installing Python&lt;/h2>
+&lt;h3 id="windows">Windows&lt;/h3>
+&lt;ol>
+&lt;li>Go to &lt;a href="https://www.python.org/downloads/">python.org&lt;/a>&lt;/li>
+&lt;li>Download the latest Python version (3.12+)&lt;/li>
+&lt;li>Run the installer&lt;/li>
+&lt;li>&lt;strong>Important&lt;/strong>: Check &amp;ldquo;Add Python to PATH&amp;rdquo; during installation&lt;/li>
+&lt;li>Click &amp;ldquo;Install Now&amp;rdquo;&lt;/li>
+&lt;/ol>
+&lt;h3 id="mac">Mac&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b949e;font-style:italic"># Using Homebrew (recommended)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew install python
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b949e;font-style:italic"># Or download from python.org&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="linux">Linux&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b949e;font-style:italic"># Ubuntu/Debian&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt update
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt install python3 python3-pip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b949e;font-style:italic"># Fedora&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo dnf install python3 python3-pip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="verify-installation">Verify Installation&lt;/h3>
+&lt;p>Open terminal/command prompt and type:&lt;/p></description></item></channel></rss>

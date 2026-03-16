@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>VS Code on TechTutorials Pro</title><link>https://chegl.com/tags/vs-code/</link><description>Recent content in VS Code on TechTutorials Pro</description><image><title>TechTutorials Pro</title><url>https://chegl.com/images/og-image.png</url><link>https://chegl.com/images/og-image.png</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://chegl.com/tags/vs-code/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Install VS Code Extensions: Complete Beginner's Guide (2026)</title><link>https://chegl.com/posts/how-to-install-vs-code-extensions-complete-beginners-guide-2026/</link><pubDate>Mon, 16 Mar 2026 10:00:00 +0800</pubDate><guid>https://chegl.com/posts/how-to-install-vs-code-extensions-complete-beginners-guide-2026/</guid><description>Learn how to install, manage, and optimize VS Code extensions. Step-by-step guide with screenshots for beginners.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VS Code on TechTutorials Pro</title><link>https://chegl.com/tags/vs-code/</link><description>Recent content in VS Code on TechTutorials Pro</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://chegl.com/tags/vs-code/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Install VS Code Extensions: Complete Beginner's Guide (2026)</title><link>https://chegl.com/posts/how-to-install-vs-code-extensions-complete-beginners-guide-2026/</link><pubDate>Mon, 16 Mar 2026 10:00:00 +0800</pubDate><guid>https://chegl.com/posts/how-to-install-vs-code-extensions-complete-beginners-guide-2026/</guid><description>&lt;h1 id="how-to-install-vs-code-extensions-complete-beginners-guide-2026">How to Install VS Code Extensions: Complete Beginner&amp;rsquo;s Guide (2026)&lt;/h1>
+&lt;p>Visual Studio Code (VS Code) is one of the most popular code editors in 2026, and its powerful extension ecosystem is a major reason why. In this guide, you&amp;rsquo;ll learn everything about installing and managing VS Code extensions.&lt;/p>
+&lt;h2 id="what-are-vs-code-extensions">What Are VS Code Extensions?&lt;/h2>
+&lt;p>Extensions are add-ons that enhance VS Code&amp;rsquo;s functionality. They can add:&lt;/p>
+&lt;ul>
+&lt;li>New programming language support&lt;/li>
+&lt;li>Debugging tools&lt;/li>
+&lt;li>Code formatters and linters&lt;/li>
+&lt;li>Themes and icons&lt;/li>
+&lt;li>Productivity features&lt;/li>
+&lt;li>Integration with external tools&lt;/li>
+&lt;/ul>
+&lt;h2 id="method-1-install-extensions-from-the-marketplace-recommended">Method 1: Install Extensions from the Marketplace (Recommended)&lt;/h2>
+&lt;h3 id="step-1-open-the-extensions-view">Step 1: Open the Extensions View&lt;/h3>
+&lt;ol>
+&lt;li>Launch VS Code&lt;/li>
+&lt;li>Click on the &lt;strong>Extensions icon&lt;/strong> in the left sidebar (or press &lt;code>Ctrl+Shift+X&lt;/code> on Windows/Linux, &lt;code>Cmd+Shift+X&lt;/code> on Mac)&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-2-search-for-an-extension">Step 2: Search for an Extension&lt;/h3>
+&lt;ol>
+&lt;li>Use the search bar at the top of the Extensions view&lt;/li>
+&lt;li>Type the name or keyword (e.g., &amp;ldquo;Python&amp;rdquo;, &amp;ldquo;Prettier&amp;rdquo;, &amp;ldquo;GitLens&amp;rdquo;)&lt;/li>
+&lt;li>Browse the search results&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-3-install-the-extension">Step 3: Install the Extension&lt;/h3>
+&lt;ol>
+&lt;li>Click on the extension you want to install&lt;/li>
+&lt;li>Click the &lt;strong>Install&lt;/strong> button&lt;/li>
+&lt;li>Wait for the installation to complete&lt;/li>
+&lt;li>Some extensions may require reloading VS Code&lt;/li>
+&lt;/ol>
+&lt;h2 id="method-2-install-from-a-vsix-file">Method 2: Install from a VSIX File&lt;/h2>
+&lt;p>Some extensions may not be available in the marketplace or you may want to install a specific version.&lt;/p></description></item></channel></rss>

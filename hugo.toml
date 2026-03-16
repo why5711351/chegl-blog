@@ -1,7 +1,7 @@
 baseURL = 'https://chegl.com/'
 languageCode = 'en-us'
 title = 'TechTutorials Pro'
-theme = 'PaperMod'
+theme = 'custom'
 
 [params]
   description = 'Professional software tutorials, tech guides, and how-to articles for developers and tech enthusiasts'

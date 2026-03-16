@@ -1,0 +1,242 @@
+{{ define "main" }}
+<!-- Hero 区域 -->
+<section class="hero-section">
+    <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern"></div>
+    </div>
+    
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="hero-badge">🚀 Welcome to TechTutorials Pro</span>
+            <h1 class="hero-title">
+                Master Tech Skills<br>
+                <span class="gradient-text">Step by Step</span>
+            </h1>
+            <p class="hero-description">
+                Professional tutorials for developers and tech enthusiasts. 
+                Learn programming, tools, and best practices with clear, practical guides.
+            </p>
+            <div class="hero-buttons">
+                <a href="/posts/" class="btn btn-primary btn-lg">
+                    Start Learning
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="/about-us/" class="btn btn-secondary btn-lg">
+                    Learn More
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Tutorials</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Readers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Free</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </span>
+                    <span class="code-title">tutorial.py</span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="keyword">def</span> <span class="function">learn_skill</span>(topic):
+    <span class="string">"""Master any tech skill"""</span>
+    
+    steps = [
+        <span class="string">"Understand basics"</span>,
+        <span class="string">"Practice examples"</span>,
+        <span class="string">"Build projects"</span>,
+        <span class="string">"Share knowledge"</span>
+    ]
+    
+    <span class="keyword">for</span> step <span class="keyword">in</span> steps:
+        practice(step)
+    
+    <span class="keyword">return</span> <span class="string">"Skill Mastered! ✨"</span>
+
+<span class="comment"># Start your journey today</span>
+result = learn_skill(<span class="string">"Python"</span>)
+print(result)</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 特性区域 -->
+<section class="features-section section">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-badge">Why Choose Us</span>
+            <h2 class="section-title">Everything You Need to Succeed</h2>
+            <p class="section-description">
+                Comprehensive tutorials designed by experts for learners at all levels
+            </p>
+        </div>
+        
+        <div class="features-grid grid-3">
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">📚</div>
+                </div>
+                <h3 class="feature-title">Step-by-Step Guides</h3>
+                <p class="feature-description">
+                    Clear, detailed tutorials that break down complex topics into manageable steps
+                </p>
+                <ul class="feature-list">
+                    <li>✓ Beginner-friendly</li>
+                    <li>✓ Code examples</li>
+                    <li>✓ Best practices</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">⚡</div>
+                </div>
+                <h3 class="feature-title">Up-to-Date Content</h3>
+                <p class="feature-description">
+                    Regularly updated tutorials covering the latest tools and technologies
+                </p>
+                <ul class="feature-list">
+                    <li>✓ Latest versions</li>
+                    <li>✓ Modern practices</li>
+                    <li>✓ Industry standards</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🎯</div>
+                </div>
+                <h3 class="feature-title">Practical Projects</h3>
+                <p class="feature-description">
+                    Hands-on projects that help you apply what you learn in real scenarios
+                </p>
+                <ul class="feature-list">
+                    <li>✓ Real-world examples</li>
+                    <li>✓ Portfolio projects</li>
+                    <li>✓ Job-ready skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 最新文章 -->
+<section class="posts-section section">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <span class="section-badge">Latest Articles</span>
+                <h2 class="section-title">Fresh from the Blog</h2>
+            </div>
+            <a href="/posts/" class="view-all-link">
+                View All Posts
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="posts-grid grid-3">
+            {{ $posts := where .Site.RegularPages "Type" "in" (slice "posts" "blog") }}
+            {{ range first 6 $posts }}
+            <article class="post-card animate-on-scroll">
+                <div class="post-card-image">
+                    <div class="post-card-placeholder">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-card-meta">
+                        {{ range first 1 .Params.tags }}
+                        <span class="post-tag">{{ . }}</span>
+                        {{ end }}
+                        <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                    </div>
+                    <h3 class="post-card-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h3>
+                    <p class="post-card-excerpt">
+                        {{ with .Description }}{{ . }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}
+                    </p>
+                    <div class="post-card-footer">
+                        <span class="post-author">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            {{ with .Params.author }}{{ . }}{{ else }}TechTutorials Team{{ end }}
+                        </span>
+                        <span class="post-reading-time">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            {{ .ReadingTime }} min read
+                        </span>
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        
+        <div class="posts-cta text-center">
+            <a href="/posts/" class="btn btn-primary btn-lg">
+                Browse All Tutorials
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA 区域 -->
+<section class="cta-section section">
+    <div class="container">
+        <div class="cta-box">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Learning?</h2>
+                <p class="cta-description">
+                    Join thousands of developers who are improving their skills with our tutorials
+                </p>
+                <div class="cta-buttons">
+                    <a href="/posts/" class="btn btn-white btn-lg">
+                        Explore Tutorials
+                    </a>
+                    <a href="/contact-us/" class="btn btn-outline-white btn-lg">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+            <div class="cta-decoration">
+                <div class="floating-shape shape-1">✨</div>
+                <div class="floating-shape shape-2">🚀</div>
+                <div class="floating-shape shape-3">💡</div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

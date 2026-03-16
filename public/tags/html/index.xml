@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>HTML on TechTutorials Pro</title><link>https://chegl.com/tags/html/</link><description>Recent content in HTML on TechTutorials Pro</description><image><title>TechTutorials Pro</title><url>https://chegl.com/images/og-image.png</url><link>https://chegl.com/images/og-image.png</link></image><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 13:00:00 +0800</lastBuildDate><atom:link href="https://chegl.com/tags/html/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Build a Website with HTML and CSS: Step-by-Step Guide (2026)</title><link>https://chegl.com/posts/how-to-build-a-website-with-html-and-css-step-by-step-guide-2026/</link><pubDate>Mon, 16 Mar 2026 13:00:00 +0800</pubDate><guid>https://chegl.com/posts/how-to-build-a-website-with-html-and-css-step-by-step-guide-2026/</guid><description>Learn to build your first website from scratch using HTML and CSS. Complete tutorial with code examples and best practices.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTML on TechTutorials Pro</title><link>https://chegl.com/tags/html/</link><description>Recent content in HTML on TechTutorials Pro</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 13:00:00 +0800</lastBuildDate><atom:link href="https://chegl.com/tags/html/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Build a Website with HTML and CSS: Step-by-Step Guide (2026)</title><link>https://chegl.com/posts/how-to-build-a-website-with-html-and-css-step-by-step-guide-2026/</link><pubDate>Mon, 16 Mar 2026 13:00:00 +0800</pubDate><guid>https://chegl.com/posts/how-to-build-a-website-with-html-and-css-step-by-step-guide-2026/</guid><description>&lt;h1 id="how-to-build-a-website-with-html-and-css-step-by-step-guide-2026">How to Build a Website with HTML and CSS: Step-by-Step Guide (2026)&lt;/h1>
+&lt;p>Building a website from scratch is easier than you think. In this tutorial, you&amp;rsquo;ll learn HTML and CSS fundamentals by creating a complete, responsive website.&lt;/p>
+&lt;h2 id="what-youll-build">What You&amp;rsquo;ll Build&lt;/h2>
+&lt;p>A personal portfolio website with:&lt;/p>
+&lt;ul>
+&lt;li>Navigation bar&lt;/li>
+&lt;li>Hero section&lt;/li>
+&lt;li>About section&lt;/li>
+&lt;li>Projects gallery&lt;/li>
+&lt;li>Contact form&lt;/li>
+&lt;li>Responsive design (works on mobile)&lt;/li>
+&lt;/ul>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>A text editor (VS Code recommended)&lt;/li>
+&lt;li>A web browser (Chrome, Firefox, or Edge)&lt;/li>
+&lt;li>No prior coding experience needed!&lt;/li>
+&lt;/ul>
+&lt;h2 id="project-setup">Project Setup&lt;/h2>
+&lt;h3 id="1-create-project-folder">1. Create Project Folder&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mkdir my-website
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd my-website
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="2-create-files">2. Create Files&lt;/h3>
+&lt;p>Create these files:&lt;/p></description></item></channel></rss>

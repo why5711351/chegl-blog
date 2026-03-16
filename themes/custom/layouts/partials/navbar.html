@@ -1,0 +1,62 @@
+<nav class="navbar">
+    <div class="container navbar-content">
+        <a href="{{ "/" | relURL }}" class="logo">
+            <span style="background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TechTutorials</span>
+        </a>
+        
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+            <li><a href="{{ "/posts/" | relURL }}">Tutorials</a></li>
+            <li><a href="{{ "/about-us/" | relURL }}">About</a></li>
+            <li><a href="{{ "/contact-us/" | relURL }}">Contact</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // 主题切换图标更新
+    function updateThemeIcon() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        
+        if (sunIcon && moonIcon) {
+            sunIcon.style.display = isDark ? 'none' : 'block';
+            moonIcon.style.display = isDark ? 'block' : 'none';
+        }
+    }
+    
+    // 监听主题变化
+    document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                setTimeout(updateThemeIcon, 100);
+            });
+        }
+        updateThemeIcon();
+    });
+</script>
