@@ -1,0 +1,64 @@
+<!-- 
+AdSense 广告位组件
+使用方式：{{ partial "ad-unit.html" (dict "size" "728x90" "position" "top" ) }}
+-->
+
+{{ $size := .size | default "300x250" }}
+{{ $position := .position | default "sidebar" }}
+{{ $label := .label | default "Advertisement" }}
+
+<div class="ad-container" data-ad-position="{{ $position }}">
+    <div class="ad-label">{{ $label }}</div>
+    
+    <!-- Google AdSense Code -->
+    <!-- 替换为你的 AdSense 代码 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+    <!-- 占位符（AdSense 审核前显示） -->
+    <div class="ad-placeholder" style="display: none;">
+        <div style="background: #f3f4f6; border: 2px dashed #d1d5db; border-radius: 0.5rem; padding: 2rem; text-align: center; color: #6b7280;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin: 0 auto 1rem;">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <p style="font-size: 0.875rem; margin: 0;">Advertisement Space</p>
+            <p style="font-size: 0.75rem; margin: 0.5rem 0 0;">Size: {{ $size }}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.ad-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.ad-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.ad-placeholder {
+    opacity: 0.5;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .ad-container {
+        margin: 1.5rem 0;
+    }
+}
+</style>

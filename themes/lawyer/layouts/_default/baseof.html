@@ -34,6 +34,9 @@
 <body>
     {{ block "main" . }}{{ end }}
     
+    <!-- Cookie 同意横幅 -->
+    {{ partial "cookie-banner.html" . }}
+    
     <!-- 页脚 -->
     {{ partial "footer.html" . }}
     
