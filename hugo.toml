@@ -4,8 +4,27 @@ title = 'TechTutorials Pro'
 theme = 'custom'
 
 [params]
-  description = 'Professional software tutorials, tech guides, and how-to articles for developers and tech enthusiasts'
-  keywords = ['tutorials', 'software', 'tech', 'programming', 'how-to']
+  # SEO 优化描述（包含主要关键词）
+  description = 'Free programming tutorials for beginners. Learn Python, web development, Git, and coding step-by-step. Practical guides for aspiring developers.'
+  
+  # 核心关键词（分层策略）
+  keywords = [
+    # 一级关键词
+    'programming tutorials for beginners',
+    'learn to code free',
+    'web development tutorials',
+    
+    # 二级关键词
+    'python tutorials',
+    'coding tutorials step by step',
+    'software development guides',
+    
+    # 长尾关键词
+    'how to learn programming from scratch',
+    'free coding courses online',
+    'beginner programming lessons'
+  ]
+  
   author = 'TechTutorials Team'
   images = ['images/og-image.png']
   
