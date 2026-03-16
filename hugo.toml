@@ -1,0 +1,51 @@
+baseURL = 'https://chegl.com/'
+languageCode = 'en-us'
+title = 'TechTutorials Pro'
+theme = 'PaperMod'
+
+[params]
+  description = 'Professional software tutorials, tech guides, and how-to articles for developers and tech enthusiasts'
+  keywords = ['tutorials', 'software', 'tech', 'programming', 'how-to']
+  author = 'TechTutorials Team'
+  images = ['images/og-image.png']
+  
+  env = 'production'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowAllPagesInArchive = true
+  ShowPageNums = true
+  ShowToc = true
+  TocOpen = true
+  
+  # AdSense (add after approval)
+  # googleAdsense = 'ca-pub-XXXXXXXXXXXXXXXX'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = 'github-dark'
+    lineNos = false
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[services]
+  [services.rss]
+    limit = 20
+
+# Permalink structure
+[permalinks]
+  posts = '/posts/:slug/'
+  pages = '/:slug/'
